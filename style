@@ -1,0 +1,75 @@
+.userMenu{
+    float: right;
+    position: absolute;
+    top: -2px;
+    right: 25px;
+}
+
+
+.userMenu li {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #acacac;
+    margin: 0 5px 5px 5px;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.userMenu a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.userMenu a:hover{
+    text-decoration: underline;
+}
+
+.material-icons {
+    color: #808080;
+    margin-top: 5px;
+}
+
+.material-icons:hover {
+    color: #000;
+}
+
+.userMenu img{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+#googleLogo img{
+    height: 92px;
+    width: 272px;
+    padding-top: 200px;
+}
+
+input{
+    margin-top: 25px;
+    height: 40px;
+    width: 600px;
+}
+
+.button{
+    margin-top: 30px;
+    border: none;
+    background: #f3f3f3;
+    height: 40px;
+    min-width: 54px;
+    border-radius: 2px;
+    padding: 0 16px;
+    color: #808080;
+    font: 13px;
+    font-weight: bold;
+    margin-left: 4px;
+    border: solid 1px #f3f3f3;
+}
+
+.button:hover{
+    border: solid 1px #c6c6c6;
+    color: #222;
+}
