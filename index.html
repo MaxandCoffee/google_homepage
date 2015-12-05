@@ -1,149 +1,182 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <title>Odin Project: Google Homepage</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        body{
-            min-height: 100%;
-        }
-        .userMenu{
-            float: right;
-            position: absolute;
-            top: -2px;
-            right: 25px;
-        }
-
-        .userMenu li {
-            display: inline-block;
-            vertical-align: middle;
-            text-decoration: none;
-            color: #acacac;
-            margin: 0 5px 5px 5px;
-            font-family: arial, sans-serif;
-            font-size: 13px;
-            line-height: 24px;
-        }
-        
-        .userMenu a{
-            text-decoration: none;
-            color: #000;
-            cursor: pointer;
-        }
-        
-        .userMenu a:hover{
-            text-decoration: underline;
-        }
-
-        .material-icons {
-            color: #808080;
-            margin-top: 5px;
-        }
-        
-        .material-icons:hover {
-            color: #000;
-        }
-        
-        .userMenu img{
-            height: 32px;
-            width: 32px;
-            border-radius: 50%;
-        }
-        
-        #googleLogo img{
-            height: 92px;
-            width: 272px;
-            padding-top: 200px;
-        }
-        
-        input{
-            margin-top: 25px;
-            height: 40px;
-            width: 600px;
-        }
-        
-        .button{
-            margin-top: 30px;
-            border: none;
-            background: #f3f3f3;
-            height: 40px;
-            min-width: 54px;
-            border-radius: 2px;
-            padding: 0 16px;
-            color: #808080;
-            font: 13px;
-            font-weight: bold;
-            margin-left: 4px;
-            border: solid 1px #f3f3f3;
-        }
-        
-        .button:hover{
-            border: solid 1px #c6c6c6;
-            color: #222;
-        }
-        
-        footer{
-            postion: fixed;
-            bottom: 0vh;
-        }
-        
-        .menu li{
-            color: #808080;
-            list-style: none;
-            display: inline;
-        }
-        
-        #left{
-            display:inline-block;
-            float:left;
-        }
-        
-        #right{
-            display:inline-block;
-            float:right;
-        }
-        
-        clear{
-            clear:both;
-        }
-    </style>
-</head>
-<body>
-    <div class="userMenu">
-        <ul>
-            <li>Max</li>
-            <li><a href="http://www.gmail.com" target="_blank">Gmail</a></li>
-            <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ei=hIFfVt1AxveYAby5mMgI&ved=0EKouCBYoAQ">Images</a></li>
-            <li><a title="Google Apps"><i class="material-icons">apps</i></a></li>
-            <li><a title="Google Notifications"><i class="material-icons">notifications</i></a></li>
-            <li><a title="Google Account: Max Hallsett"><img src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/person-icon.png" /></a></li>
-        </ul>
-    </div>
-    <center>
-        <div id="googleLogo"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" /></div>
-        <input type="search"></input>
-        <br />
-        <button class="button">Google Search</button>
-        <button class="button">I'm Feeling Lucky</button>
-    </center>
-</body>
-<footer>
-    <div class="menu">
-        <div id="left">
+    <head>
+        <title>Odin Project: Google Homepage</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            html,
+            body {
+               margin:0;
+               padding:0;
+               height:100%;
+            }
+            
+            #landingPage{
+                display: block;
+            }
+            
+            .userMenu{
+                float: right;
+                position: absolute;
+                top: -2px;
+                right: 25px;
+            }
+            
+            .userMenu li {
+                display: inline-block;
+                vertical-align: middle;
+                text-decoration: none;
+                color: #acacac;
+                margin: 0 5px 5px 5px;
+                font-family: arial, sans-serif;
+                font-size: 13px;
+                line-height: 24px;
+            }
+            
+            .userMenu a{
+                text-decoration: none;
+                color: #000;
+                cursor: pointer;
+            }
+            
+            .userMenu a:hover{
+                text-decoration: underline;
+            }
+            .material-icons {
+                color: #808080;
+                margin-top: 5px;
+            }
+            
+            .material-icons:hover {
+                color: #000;
+            }
+            
+            .userMenu img{
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+            }
+            
+            #googleLogo img{
+                height: 92px;
+                width: 272px;
+                padding-top: 200px;
+            }
+            
+            input{
+                margin-top: 25px;
+                height: 40px;
+                width: 600px;
+                border: solid 1px #d9d9d9;
+            }
+            
+            .button{
+                margin-top: 30px;
+                border: none;
+                background: #f3f3f3;
+                height: 40px;
+                min-width: 54px;
+                border-radius: 2px;
+                padding: 0 16px;
+                color: #808080;
+                font-size:13px;
+                font-weight: bold;
+                margin-left: 4px;
+                border: solid 1px #f3f3f3;
+            }
+            
+            .button:hover{
+                border: solid 1px #c6c6c6;
+                color: #222;
+            }
+            
+            footer{
+                position:fixed;
+                bottom: 0px;
+                background-color: #f2f2f2;
+                width: 100%;
+                margin-left:-27px;
+                display: block;
+                padding-right: 27px;
+                border-top: solid 1px #e4e4e4;
+                height: 40px;
+                text-align: center;
+            }
+            
+            .menu{
+                position: relative;
+                bottom: 6px;
+                left: -10px;
+            }
+            
+            .menu li{
+                color: #666;
+                list-style: none;
+                display: inline-block;
+                font-family: arial, sans-serif;
+                padding-left:27px;
+                font-size: small;
+            }
+            
+            .menu a:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            
+            #left{
+                display:inline-block;
+                float:left;
+            }
+            
+            #right{
+                display:inline-block;
+                float:right;
+            }
+            
+            .clear{
+                clear:both;
+            }
+        </style>    
+    </head>
+<div id="landingPage">    
+    <body>
+        <div class="userMenu">
             <ul>
-                <li>Advertising</li>
-                <li>Business</li>
-                <li>About</li>
+                <li>Max</li>
+                <li><a href="http://www.gmail.com" target="_blank">Gmail</a></li>
+                <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ei=hIFfVt1AxveYAby5mMgI&ved=0EKouCBYoAQ">Images</a></li>
+                <li><a title="Google Apps"><i class="material-icons">apps</i></a></li>
+                <li><a title="Google Notifications"><i class="material-icons">notifications</i></a></li>
+                <li><a title="Google Account: Max Hallsett"><img src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/person-icon.png" /></a></li>
             </ul>
         </div>
-        <div id="right">
-            <ul>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
-            </ul>
+        <center>
+            <div id="googleLogo"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+            </div>
+            <input type="search"></input>
+            <br />
+            <button class="button">Google Search</button>
+            <button class="button">I'm Feeling Lucky</button>
+        </center>
+    </body>
+    <footer>
+        <div class="menu">
+            <div id="left">
+                <ul>
+                    <li><a>Advertising</a></li>
+                    <li><a>Business</a></li>
+                    <li><a>About</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <ul>
+                    <li><a>Privacy</a></li>
+                    <li><a>Terms</a></li>
+                    <li><a>Settings</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</div>
 </html>
